@@ -19,7 +19,7 @@ function TopCategories() {
       {topCategor.map((item) => {
         return (
           <Link key={item.slug} href={`/top-menu/${item.slug}`}>
-            <p>{item.title}</p>
+            <p className="select-none">{item.title}</p>
           </Link>
         );
       })}

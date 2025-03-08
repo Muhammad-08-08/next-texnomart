@@ -28,7 +28,7 @@ function TopMenu() {
   return (
     <div className="grid grid-cols-5 gap-6 container px-10 mx-auto">
       {topMenu.map((item) => (
-        <Link href={`product/${item}`} key={item.id}>
+        <Link href={`/product/${item.id}`} key={item.id}>
           <CardPage item={item} />
         </Link>
       ))}

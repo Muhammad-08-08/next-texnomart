@@ -12,3 +12,10 @@ export type TopCategoriesType = {
   slug: string;
   title: string;
 };
+
+export type Products = {
+  id: number;
+  name: string;
+  large_images: string[];
+  sale_price: number;
+};
