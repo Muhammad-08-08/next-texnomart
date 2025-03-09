@@ -1,3 +1,5 @@
+import { Carousel } from "antd";
+
 export type CardPageType = {
   item: Kards;
 };
@@ -19,3 +21,6 @@ export type Products = {
   large_images: string[];
   sale_price: number;
 };
+export type CarouselType = {
+  image_mobile_web: string;
+}[];
