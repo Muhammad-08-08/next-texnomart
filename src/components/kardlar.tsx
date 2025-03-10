@@ -19,7 +19,7 @@ function Kardlar() {
   }, []);
 
   return (
-    <div>
+    <div className="my-6">
       <h2 className="text-2xl mb-4 font-medium">Xit Savdo</h2>
       <div className="grid grid-cols-5 gap-6">
         {products?.map((item) => {
