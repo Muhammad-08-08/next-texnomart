@@ -22,3 +22,10 @@ export type Products = {
 export type CarouselType = {
   image_mobile_web: string;
 }[];
+
+export type Product = Kards[];
+
+export type TopMenuType = {
+  total: number;
+  products: Product;
+};
