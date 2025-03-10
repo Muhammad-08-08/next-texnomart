@@ -32,16 +32,18 @@ function TopMenu() {
   if (!slug || !topMenu) return <p>Loading...</p>;
 
   return (
-    <div className="grid grid-cols-5 gap-6 container px-10 mx-auto">
-      {topMenu.products && topMenu.products.length > 0 ? (
-        topMenu.products.map((item) => (
-          <Link href={`/product/${item.id}`} key={item.id}>
-            <CardPage item={item} />
-          </Link>
-        ))
-      ) : (
-        <p>Mahsulotlar topilmadi</p>
-      )}
+    <div className="px-10 mx-auto my-6">
+      <div className="grid grid-cols-5 gap-6 container px-10 mx-auto mb-4">
+        {topMenu.products && topMenu.products.length > 0 ? (
+          topMenu.products.map((item) => (
+            <Link href={`/product/${item.id}`} key={item.id}>
+              <CardPage item={item} />
+            </Link>
+          ))
+        ) : (
+          <p>Mahsulotlar topilmadi</p>
+        )}
+      </div>
       <Pagination
         current={currentPage}
         total={topMenu.total || 0}
