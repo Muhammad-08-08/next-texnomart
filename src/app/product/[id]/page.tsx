@@ -2,6 +2,7 @@
 
 import { Products } from "@/components/User.Type";
 import axios from "axios";
+import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -28,10 +29,11 @@ function ProductPage() {
       <div className="bg-white shadow-lg rounded-lg p-6 grid grid-cols-2 items-center">
         <div>
           <h1 className="text-xl font-bold">{product.name}</h1>
-          <img
+          <Image
             src={product.large_images[0]}
             alt={product.name}
-            className="w-64 h-64 object-cover"
+            width={500}
+            height={300}
           />
         </div>
         <p className="text-lg text-gray-700">

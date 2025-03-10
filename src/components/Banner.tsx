@@ -1,4 +1,5 @@
 import { Carousel } from "antd";
+import Image from "next/image";
 
 function Banner() {
   const banner = [
@@ -16,18 +17,20 @@ function Banner() {
       <Carousel arrows autoplay pauseOnHover draggable>
         {banner.map((item, index) => (
           <div key={index}>
-            <img
-              src={item}
-              alt={`banner-${index}`}
-              style={{
-                width: "100%",
-                borderRadius: 10,
-                transition: "transform 0.3s ease-in-out",
-                border: "5px solid transparent",
-              }}
-              className="hover:border-4 hover:border-blue-500 cursor-pointer select-none"
-            />
-          </div>
+          <Image
+            src={item}
+            alt={`banner-${index}`}
+            width={1000}
+            height={300}
+            style={{
+              width: "100%",
+              borderRadius: 10,
+              transition: "transform 0.3s ease-in-out",
+              border: "5px solid transparent",
+            }}
+            className="hover:border-4 hover:border-blue-500 cursor-pointer select-none"
+          />
+        </div>
         ))}
       </Carousel>
     </div>

@@ -1,5 +1,3 @@
-import { Carousel } from "antd";
-
 export type CardPageType = {
   item: Kards;
 };
