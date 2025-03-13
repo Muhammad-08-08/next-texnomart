@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Search from "./Search";
 
 function Navbar() {
   return (
@@ -6,6 +7,7 @@ function Navbar() {
       <Link href={"/"}>
         <h2 className="text-2xl text-white">Logo</h2>
       </Link>
+      <Search />
     </div>
   );
 }
